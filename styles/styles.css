@@ -1,0 +1,151 @@
+body {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+#header {
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+.center {
+    width: 75%;
+    margin: 0px auto;
+}
+#logo {
+    width: 30%;
+    font-size: 25px;
+    float: left;
+}
+#logo img {
+    display: block;
+    float: left;
+    height: 60px;
+    margin: 5px;
+}
+#logo p {
+    display: block;
+    float: left;
+    margin-left: 10px;
+    color: grey;
+}
+#menu {
+    width: 40%;
+    float: left;
+    height: 100%;
+}
+#menu ul {
+    float: left;
+    line-height: 48px;
+}
+#menu ul li {
+    display: inline-block; /*Coloca los elementoos sobre una misma linea horizontal*/
+    list-style: none;/*Quita los puntos de las listtas ul*/
+    height: 46px;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+#menu p {
+    text-decoration: none;/*quita el subrayado de los links*/
+    color: #444;
+    transition: 300ms all;/*Permite hacer transiciones a los elementos*/
+}
+#menu p:hover {
+    color: #2A41E8;
+    text-decoration: underline;
+}
+#search {
+    width: 30%;
+    float: left;
+}
+#content .center {
+    width: 75%;
+    margin: 0px auto;
+    display: flex;
+}
+.card{
+    border-radius: 10px;
+    margin: 15px;
+    width: 300px;
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+}
+.card-img {
+    position: relative;
+    height: fit-content;
+}
+.card-img img {
+    border-radius: 10px;
+    width: 100%;
+}
+.propertyType{
+    position: absolute;
+    background-color: #2A42E8;
+    color: #fff;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 2px;
+    width: 90px;
+    top: 10px;
+    left: 5px;
+}
+.businessType {
+    position: absolute;
+    background-color: #FF5E15;
+    color: #fff;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 2px;
+    width: 90px;
+    top: 10px;
+    left: 100px;
+}
+.fav {
+    position: absolute;
+    background-color: #fff;
+    color:black;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 2px;
+    width: 20px;
+    top: 10px;
+    right: 10px;
+    border: none;  
+    transition: 0.25s;
+}
+.fav:hover{
+    scale: 1.2;
+}
+.fav-clicked {
+    position: absolute;
+    background-color: #FF5E15;
+    color: #fff;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 2px;
+    width: 20px;
+    top: 10px;
+    right: 10px;
+    border: none;
+}
+.price{
+    position: absolute;
+    background-color: #fff;
+    color: #2A42E8;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 2px;
+    width: 120px;
+    bottom: 10px;
+    left: 10px;
+}
+.hide{
+    display: none;
+}
+.clearFix{
+    clear: both;
+    float: none;
+}

@@ -1,0 +1,148 @@
+{
+    "data": [
+        {
+            "img": "./images/2 featured properties/anna-sullivan-635346-unsplash-1.png",
+            "id": 1,
+            "location": "Afueras de la ciudad",
+            "totalArea": 85,
+            "rooms": 3,
+            "bathRoom": 2,
+            "propertyType": "Apartamento",
+            "businessType": "Renta",
+            "price": 1.5,
+            "parking": true,
+            "owner": {
+                "ownerName": "Airon Ruda",
+                "ownerPhone": 123,
+                "ownerEmail": "airon.ruda@gmail.com"
+            },
+            "description": "Comodo apartamento"
+        },
+        {
+            "img": "./images/2 featured properties/pixasquare-622732-unsplash-2.png",
+            "id": 2,
+            "location": "Afueras de la ciudad",
+            "totalArea": 80,
+            "rooms": 3,
+            "bathRoom": 2,
+            "propertyType": "Apartamento",
+            "businessType": "Venta",
+            "price": 200,
+            "parking": true,
+            "owner": {
+                "ownerName": "Steven Alfonso",
+                "ownerPhone": 456,
+                "ownerEmail": "steven.Alfonso@gmail.com"
+            },
+            "description": "Comodo apartamento"
+        },
+        {
+            "img": "./images/2 featured properties/pixasquare-622732-unsplash-2.png",
+            "id": 3,
+            "location": "Afueras de la ciudad",
+            "totalArea": 120,
+            "rooms": 5,
+            "bathRoom": 6,
+            "propertyType": "Casa",
+            "businessType": "Renta",
+            "price": 3,
+            "parking": true,
+            "owner": {
+                "ownerName": "Dayan Ruda",
+                "ownerPhone": 789,
+                "ownerEmail": "dayan.ruda@gmail.com"
+            },
+            "description": "casa grande"
+        },
+        {
+            "img": "./images/2 featured properties/pixasquare-622732-unsplash-2.png",
+            "id": 4,
+            "location": "Afueras de la ciudad",
+            "totalArea": 150,
+            "rooms": 5,
+            "bathRoom": 5,
+            "propertyType": "Casa",
+            "businessType": "Venta",
+            "price": 400,
+            "parking": true,
+            "owner": {
+                "ownerName": "Vanessa Alfonso",
+                "ownerPhone": 741,
+                "ownerEmail": "vanessa.alfonso@gmail.com"
+            },
+            "description": "enorme casa"
+        },
+        {
+            "img": "./images/2 featured properties/pixasquare-622732-unsplash-2.png",
+            "id": 5,
+            "location": "Centro de la ciudad",
+            "totalArea": 75,
+            "rooms": 3,
+            "bathRoom": 2,
+            "propertyType": "Apartamento",
+            "businessType": "Renta",
+            "price": 1.3,
+            "parking": false,
+            "owner": {
+                "ownerName": "Juan Ruda",
+                "ownerPhone": 852,
+                "ownerEmail": "juan.ruda@gmail.com"
+            },
+            "description": "apartamento grande"
+        },
+        {
+            "img": "./images/2 featured properties/pixasquare-622732-unsplash-2.png",
+            "id": 6,
+            "location": "Centro de la ciudad",
+            "totalArea": 65,
+            "rooms": 2,
+            "bathRoom": 1,
+            "propertyType": "Apartamento",
+            "businessType": "Venta",
+            "price": 150,
+            "parking": true,
+            "owner": {
+                "ownerName": "Carlos Morales",
+                "ownerPhone": 963,
+                "ownerEmail": "carlos.morales@gmail.com"
+            },
+            "description": "apartamento grande a la venta" 
+        },
+        {
+            "img": "./images/2 featured properties/pixasquare-622732-unsplash-2.png",
+            "id": 7,
+            "location": "Centro de la ciudad",
+            "totalArea": 120,
+            "rooms": 3,
+            "bathRoom": 1,
+            "propertyType": "Casa",
+            "businessType": "Renta",
+            "price": 2,
+            "parking": false,
+            "owner": {
+                "ownerName": "Victor Roa",
+                "ownerPhone": 147,
+                "ownerEmail": "victor.roa@gmail.com"
+            },
+            "description": "description"
+        },
+        {
+            "img": "./images/2 featured properties/pixasquare-622732-unsplash-2.png",
+            "id": 8,
+            "location": "Centro de la ciudad",
+            "totalArea": 120,
+            "rooms": 3,
+            "bathRoom": 2,
+            "propertyType": "Casa",
+            "businessType": "Venta",
+            "price": 250,
+            "parking": false,
+            "owner": {
+                "ownerName": "Jeison Castro",
+                "ownerPhone": 258,
+                "ownerEmail": "jeison.castro@gmail.com"
+            },
+            "description": "description"
+        }
+    ]
+}
