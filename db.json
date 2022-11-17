@@ -20,7 +20,7 @@
         },
         {
             "img": "./images/2 featured properties/apartamento2.jpg",
-            "id": 2,
+            "id": "./images/2 featured properties/apartamento2.jpg",
             "location": "Afueras de la ciudad",
             "totalArea": 80,
             "rooms": 3,
@@ -38,7 +38,7 @@
         },
         {
             "img": "./images/2 featured properties/casa1.jpg",
-            "id": 3,
+            "id": "./images/2 featured properties/casa1.jpg",
             "location": "Afueras de la ciudad",
             "totalArea": 120,
             "rooms": 5,
@@ -56,7 +56,7 @@
         },
         {
             "img": "./images/2 featured properties/casa2.jpg",
-            "id": 4,
+            "id": "./images/2 featured properties/casa2.jpg",
             "location": "Afueras de la ciudad",
             "totalArea": 150,
             "rooms": 5,
@@ -74,7 +74,7 @@
         },
         {
             "img": "./images/2 featured properties/apartamento3.jpg",
-            "id": 5,
+            "id": "./images/2 featured properties/apartamento3.jpg",
             "location": "Centro de la ciudad",
             "totalArea": 75,
             "rooms": 3,
@@ -92,7 +92,7 @@
         },
         {
             "img": "./images/2 featured properties/apartamento4.jpg",
-            "id": 6,
+            "id": "./images/2 featured properties/apartamento4.jpg",
             "location": "Centro de la ciudad",
             "totalArea": 65,
             "rooms": 2,
@@ -110,7 +110,7 @@
         },
         {
             "img": "./images/2 featured properties/casa3.jpg",
-            "id": 7,
+            "id": "./images/2 featured properties/casa3.jpg",
             "location": "Centro de la ciudad",
             "totalArea": 120,
             "rooms": 3,
@@ -128,7 +128,7 @@
         },
         {
             "img": "./images/2 featured properties/casa4.jpg",
-            "id": 8,
+            "id": "./images/2 featured properties/casa4.jpg",
             "location": "Centro de la ciudad",
             "totalArea": 120,
             "rooms": 3,

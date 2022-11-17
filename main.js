@@ -8,6 +8,7 @@ const getData = async (searchData) => {
     return data;
   } catch (error) {}
 };
+
 const cleanField = (field) => {
   const cardField = document.querySelector(`#${field}`);
   cardField.innerHTML = "";
@@ -58,17 +59,52 @@ const createBasicCards = async (search) => {
   });
 };
 
-const createFavCards = async (favImg) => {
-  // cleanField("favField");
-  const favSelected = document.querySelectorAll(".selected");
-  favSelected.forEach((favInfo) => {
-    console.log(favInfo);
-    const imgDir = favInfo.querySelector(".hideId").textContent;
-    const data = getData("./images/2 featured properties/apartamento1.jpg");
-    console.log(data);
+const createFavCards = async (search) => {
+  cleanField("favField");
+
+  const data = await getData(search);
+  data.forEach((eachInfo) => {
+    const {
+      img,
+      id,
+      location,
+      totalArea,
+      rooms,
+      bathRoom,
+      propertyType,
+      businessType,
+      price,
+      parking,
+      owner,
+      description,
+    } = eachInfo;
+    const card = document.createElement("div");
+    card.setAttribute("class", "card-fav");
+    card.innerHTML = `
+    <div class="card-img">
+        <p class="hide hideId">${id}</p>
+        <img
+        src="${img}"
+        alt=""
+        srcset=""
+        />
+        <p class="propertyType">${propertyType}</p>
+        <p class="businessType">${businessType}</p>
+        <button class="fav" id="favButton">fav</button>
+        <p class="price">${price} M</p>
+    </div>
+    <div class="card-info">
+        <p class="location">${location}</p>
+        <p class="owner">Propietario: ${owner.ownerName}</p>
+        <p class="total-area">${totalArea} sq ft</p>
+        <p class="parking">parking:${parking}</p>
+        <p class="bathRoom">bathroom:${bathRoom}</p>
+        <p class="rooms">rooms:${rooms}</p>
+    </div>
+    `;
+    favField.appendChild(card);
   });
 };
-createFavCards();
 
 let favSelector = async () => {
   await createBasicCards();
@@ -78,9 +114,15 @@ let favSelector = async () => {
     favButtons.addEventListener("click", () => {
       favButtons.classList.toggle("fav-clicked");
       eachCard.classList.toggle("selected");
+      const hidedId = eachCard.querySelector(".hideId").textContent;
+      createFavCards(hidedId);
+      console.log(hidedId);
     });
   });
 };
+
+favSelector();
+
 const form = document.querySelector(".form");
 form.addEventListener("submit", (search) => {
   search.preventDefault();
@@ -88,9 +130,34 @@ form.addEventListener("submit", (search) => {
   createBasicCards(searchData);
   console.log(searchData);
 });
-// favSelector();
 
 /*
+const createFavCards = async () => {
+  cleanField("favField");
+  const favSelected = document.querySelectorAll(".selected");
+  favSelected.forEach((favInfo) => {
+    const imgDir = favInfo.querySelector(".hideId").textContent;
+    console.log(imgDir);
+  });
+};
+
+
+
+
+
+
+
+
+favSelected.forEach((favInfo) => {
+    console.log(favInfo);
+    const imgDir = favInfo.querySelector(".hideId").textContent;
+    const data = await getData();
+    console.log(data);
+  });
+
+
+
+
 let menu = document.querySelector("#menu");
 
 
