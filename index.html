@@ -20,9 +20,11 @@
         <nav id="menu">
           <ul>
             <li>
+              <!-- <a href="./index.html" class="homeSection" value="home">Home</a> -->
               <p class="homeSection" value="home">Home</p>
             </li>
             <li>
+              <!-- <a href="./fav.html" class="favSection" value="favs">Favoritos</a> -->
               <p class="favSection" value="favs">Favoritos</p>
             </li>
           </ul>
@@ -30,94 +32,43 @@
         <!--busqueda-->
         <div id="search">
           <p>Encuentra el articulo que buscas</p>
-          <form action="">
+          <form class="form" action="">
             <input type="text" name="search" />
             <input type="submit" name="submit" />
           </form>
         </div>
       </div>
     </header>
-    <!--oferta-->
-    <div class="page" id="content">
-      <div class="center">
-        <!--card-->
-        <div class="card">
-          <div class="card-img">
-            <img
-              src="./images/2 featured properties/anna-sullivan-635346-unsplash-1.png"
-              alt=""
-              srcset=""
-            />
-            <p class="propertyType">tipo negocio</p>
-            <p class="businessType">tipo casa</p>
-            <button class="fav">fav</button>
-            <p class="price">precio</p>
-          </div>
-          <div class="card-info"></div>
+
+    <!--cardField-->
+    <div class="center" id="cardField"></div>
+
+    <!--favField-->
+    <div class="center" id="favField">
+      <div class="card selected">
+        <div class="card-img">
+          <p class="hide hideId">${id}</p>
+          <img
+            src="./images/2 featured properties/apartamento1.jpg"
+            value="./images/2 featured properties/apartamento1.jpg"
+            alt=""
+            srcset=""
+          />
+          <p class="propertyType">${propertyType}</p>
+          <p class="businessType">${businessType}</p>
+          <button class="fav" id="favButton">fav</button>
+          <p class="price">${price} M</p>
         </div>
-        <!--Fin card-->
-        <!--card-->
-        <div class="card">
-          <div class="card-img">
-            <img
-              src="./images/2 featured properties/anna-sullivan-635346-unsplash-1.png"
-              alt=""
-              srcset=""
-            />
-            <p class="propertyType">tipo negocio</p>
-            <p class="businessType">tipo casa</p>
-            <button class="fav">fav</button>
-            <p class="price">precio</p>
-          </div>
-          <div class="card-info">
-            <p class="location">location</p>
-          </div>
+        <div class="card-info">
+          <p class="location">${location}</p>
+          <p class="owner">Propietario: ${owner.ownerName}</p>
+          <p class="total-area">${totalArea} sq ft</p>
+          <p class="parking">parking:${parking}</p>
+          <p class="bathRoom">bathroom:${bathRoom}</p>
+          <p class="rooms">rooms:${rooms}</p>
         </div>
-        <!--Fin card-->
       </div>
     </div>
-    <!--Fin toda la oferta-->
-    <!--Favotiros-->
-    <div class="page hide" id="favs">
-      favs
-      <div class="center">
-        <!--card-->
-        <div class="card">
-          <div class="card-img">
-            <img
-              src="./images/2 featured properties/anna-sullivan-635346-unsplash-1.png"
-              alt=""
-              srcset=""
-            />
-            <p class="propertyType">tipo negocio</p>
-            <p class="businessType">tipo casa</p>
-            <button class="fav">fav</button>
-            <p class="price">precio</p>
-          </div>
-          <div class="card-info"></div>
-        </div>
-        <!--Fin card-->
-        <!--card-->
-        <div class="card">
-          <div class="card-img">
-            <img
-              src="./images/2 featured properties/anna-sullivan-635346-unsplash-1.png"
-              alt=""
-              srcset=""
-            />
-            <p class="propertyType">tipo negocio</p>
-            <p class="businessType">tipo casa</p>
-            <button class="fav">fav</button>
-            <p class="price">precio</p>
-          </div>
-          <div class="card-info">
-            <p class="location">location</p>
-          </div>
-        </div>
-        <!--Fin card-->
-      </div>
-    </div>
-    <!--fin favoritos-->
 
     <footer class="footer">
       <p>&copy; Airon Ruda</p>
